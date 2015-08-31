@@ -1,0 +1,76 @@
+public class GeometryLabTest {
+
+    public static void main (String[] args) {
+        GeometryLab geo = new GeometryLab();
+        System.out.println(geo.f(2.0,3.0));
+        System.out.println(geo.f(4.0,8.0));
+        System.out.println(geo.g(3.0,5.0));
+        System.out.println(geo.g(5.0,3.0));
+        System.out.println(geo.h(2.0,9.0));
+        System.out.println(geo.h(4.0,10.0));
+        System.out.println(geo.j(5.0,10.0));
+        System.out.println(geo.j(10.0,5.0));
+        System.out.println(geo.k(9.0,7.0));
+        System.out.println(geo.k(7.0,9.0));
+        System.out.println(geo.m(3.0,4.0,5.0));
+        System.out.println(geo.m(4.0,6.0,3.0));
+        System.out.println(geo.f(geo.g(3.0,5.0), geo.k(7.0,9.0)));
+        System.out.println(geo.f(geo.j(10.0,5.0), geo.h(2.0,9.0)));
+        System.out.println(geo.g(geo.m(3.0,4.0,5.0), geo.h(4.0,10.0)));
+        System.out.println(geo.g(geo.j(5.0,10.0), geo.f(2.0,3.0)));
+        System.out.println(geo.h(geo.m(4.0,6.0,3.0), geo.f(4.0,8.0)));
+        System.out.println(geo.h(geo.k(9.0,7.0), geo.g(5.0,3.0)));
+        System.out.println(geo.j(geo.k(7.0,9.0), geo.g(3.0,5.0)));
+        System.out.println(geo.j(geo.h(2.0,9.0), geo.m(4.0,6.0,3.0)));
+        System.out.println(geo.k(geo.m(3.0,4.0,5.0), geo.j(10.0,5.0)));
+        System.out.println(geo.k(geo.k(9.0,7.0), geo.f(4.0,8.0)));
+        System.out.println(geo.m(geo.h(4.0,10.0), geo.f(2.0,3.0), geo.g(5.0,3.0)));
+        System.out.println(geo.m(geo.k(7.0,9.0), geo.j(5.0,10.0), geo.h(4.0,10.0)));
+        System.out.println(geo.triArea(2.0,3.0));
+        System.out.println(geo.triArea(4.0,8.0));
+        System.out.println(geo.trapArea(3.0,4.0,5.0));
+        System.out.println(geo.trapArea(4.0,6.0,3.0));
+        System.out.println(geo.rectArea(3.0,5.0));
+        System.out.println(geo.rectArea(5.0,3.0));
+        System.out.println(geo.circArea(7.0));	
+        System.out.println(geo.circArea(9.0));
+        System.out.println(geo.paralArea(2.0,9.0));	
+        System.out.println(geo.paralArea(4.0,10.0));
+        System.out.println(geo.pythHypotenuse(5.0,10.0));	
+        System.out.println(geo.pythHypotenuse(9.0,7.0));
+        System.out.println(geo.triPrismVol(10.0,5.0,4.0));
+        System.out.println(geo.triPrismVol(7.0,9.0,3.0));
+        System.out.println(geo.rectPrismVol(2.0,3.0,4.0));
+        System.out.println(geo.rectPrismVol(8.0,3.0,6.0));
+        System.out.println(geo.rectPyramidVol(5.0,7.0,9.0));
+        System.out.println(geo.rectPyramidVol(4.0,6.0,8.0));
+        System.out.println(geo.cylVol(9.0,2.0));
+        System.out.println(geo.cylVol(10.0,3.0));
+        System.out.println(geo.sphereVol(6.0));
+        System.out.println(geo.sphereVol(8.0));
+        System.out.println(geo.coneVol(6.0,5.0));
+        System.out.println(geo.coneVol(6.0,5.0));
+        System.out.println(geo.sphereSurfArea(4.0));
+        System.out.println(geo.sphereSurfArea(7.0));
+        System.out.println(geo.cylSurfArea(4.0,7.0));
+        System.out.println(geo.cylSurfArea(5.0,3.0));
+        System.out.println(geo.rectPrismSurfArea(2.0,3.0,4.0));		
+        System.out.println(geo.rectPrismSurfArea(8.0,3.0,6.0));
+        System.out.println(geo.triArea(geo.f(2.0,3.0), geo.h(4.0,8.0)));		
+        System.out.println(geo.rectArea(geo.g(7.0,5.0), geo.j(5.0,3.0)));
+        System.out.println(geo.trapArea(geo.m(3.0,4.0,5.0), geo.m(4.0,6.0,3.0), geo.m(8.0,3.0,6.0)));
+        System.out.println(geo.circArea(geo.k(8.0,5.0)));	
+        System.out.println(geo.paralArea(geo.j(9.0,2.0), geo.f(4.0,10.0)));
+        System.out.println(geo.pythHypotenuse(geo.f(5.0,10.0), geo.g(9.0,7.0)));
+        System.out.println(geo.triPrismVol(geo.m(10.0,5.0,4.0), geo.m(7.0,9.0,3.0), geo.m(5.0,7.0,3.0)));
+        System.out.println(geo.rectPrismVol(geo.h(2.0,4.0), geo.m(8.0,3.0,6.0), geo.h(3.0,6.0)));
+        System.out.println(geo.rectPyramidVol(geo.m(5.0,7.0,9.0), geo.m(4.0,6.0,8.0), geo.k(20.0,7.0)));
+        System.out.println(geo.cylVol(geo.h(9.0,2.0), geo.k(10.0,3.0)));	
+        System.out.println(geo.sphereVol(geo.g(9.0,6.0)));
+        System.out.println(geo.coneVol(geo.j(6.0,5.0), geo.j(8.0,7.0)));	
+        System.out.println(geo.sphereSurfArea(geo.m(4.0,3.0,1.0)));
+        System.out.println(geo.cylSurfArea(4.0, geo.f(5.0,3.0)));
+        System.out.println(geo.rectPrismSurfArea(geo.pythHypotenuse(3.0,4.0),3.0, geo.k(13.0,5.0)));
+    }
+ 
+}
